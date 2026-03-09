@@ -1,20 +1,18 @@
 pipeline {
     agent any
     stages {
-        stage('Create HTML') {
+        stage('Checkout') {
             steps {
-                
+                git 'https://github.com/itsroshravi/javarep.git'
             }
         }
         stage('Publish') {
             steps {
                 publishHTML([
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
+                    
                     reportDir: 'reports',
-                    reportFiles: 'index.html',
-                    reportName: 'Simple Report'
+                    reportFiles: 'servehtml.html',
+                    reportName: 'MY HTML PAGE'
                 ])
             }
         }
