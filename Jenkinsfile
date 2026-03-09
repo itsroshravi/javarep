@@ -11,7 +11,7 @@ pipeline {
                 publishHTML([
                     
                     allowMissing: true,
-                    alwaysLinkToLastBuild: false,
+                    
                     keepAll: false,
                     reportDir: '.',
                     reportFiles: 'servehtml.html',
