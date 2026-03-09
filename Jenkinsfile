@@ -14,7 +14,7 @@ pipeline {
                     alwaysLinkToLastBuild: false,
                     keepAll: false,
                     reportDir: '.',
-                    reportFiles: 'index.html',
+                    reportFiles: 'Index.html',
                     reportName: 'MY HTML PAGE'
                     
                 ])
